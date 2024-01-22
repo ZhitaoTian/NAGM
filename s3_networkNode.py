@@ -10,7 +10,7 @@ enzyme2ko = read_table("./input/enzyme2ko.txt")
 ko2reaction = read_table("./input/ko_reaction.txt")
 pathway2compoundT = read_table("./input/pathway2compound.txt")
 
-compound2koT = read_table("./output/jxb_Library_similarity.txt")
+compound2koT = read_table("./output/r1_jxb_Library_similarity.txt")
 compound2koDict = {}
 for i in compound2koT:
   try:

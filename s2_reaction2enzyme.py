@@ -23,14 +23,14 @@ for i in enzyme2reaction:
   print(i)
   enzyme2reactionDict[i[4]][i[0]] = i
 
-similarityT = read_table("./output/jxb_Library_similarity.txt")
+similarityT = read_table("./output/r1_jxb_Library_similarity.txt")
 similarity = []
 for i in similarityT:
   i[-1] = float(i[-1])
   if i[-1] > 0.3:
     similarity.append(i)
 
-similarityT2 = read_table("./output/jxb_Library_similarity2.txt")
+similarityT2 = read_table("./output/r2_jxb_Library_similarity2.txt")
 similarity2 = []
 for i in similarityT2:
   i[-1] = float(i[-1])

@@ -69,7 +69,7 @@ for i in libraryStructure2:
       numT += 1
       num = "r" + str(numT).zfill(9)
       result.append([num, j[7], i[0]])
-    with open("./output/jxb_Library_similarity.txt", "a", encoding="utf-8") as f:
+    with open("./output/r1_jxb_Library_similarity.txt", "a", encoding="utf-8") as f:
       f.write(j[7]+"\t" + i[0]+"\t"+str(temp2)+"\n")
 
 for ti in range(len(libraryStructure2))[:-1]:
@@ -84,6 +84,6 @@ for ti in range(len(libraryStructure2))[:-1]:
     elif temp2 > 0.7:
       numT += 1
       num = "r" + str(numT).zfill(9)
-    with open("./output/jxb_Library_similarity2.txt", "a", encoding="utf-8") as f:
+    with open("./output/r2_jxb_Library_similarity2.txt", "a", encoding="utf-8") as f:
       f.write(j[0]+"\t" + i[0]+"\t"+str(temp2)+"\n")
       f.write(i[0]+"\t" + j[0]+"\t"+str(temp2)+"\n")
