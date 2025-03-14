@@ -8,7 +8,7 @@ from rdkit import DataStructs
 from rdkit import Chem
 from rdkit.Chem import AllChem
 
-
+#WeChat:17607368926
 fileT = read_table("./input/structureTable4c.txt")
 fileT2 = read_table("./input/i1_MetabolitesInfo3_adFomular.txt")
 filterList = read_table("./input/reaction_pathway_network4_duplicate.txt")
