@@ -145,14 +145,14 @@ nodeNetwork = [i for i in nodeResult if i[0] in allNode]
 
 allEdge.insert(0, ["reaction", "reactant", "product", "type"])
 nodeResult.insert(0, ["id", "name", "type1", "type2", "smiles"])
-# write_table(allEdge, os.path.join("../", "r4_all_edge.txt"))
-# write_table(nodeResult, os.path.join("../", "r4_all_node.txt"))
-# write_table(nodeNetwork, os.path.join("../", "r4_alledge_node.txt"))
+write_table(allEdge, os.path.join("./output/", "r4_all_edge.txt"))
+write_table(nodeResult, os.path.join("./output/", "r4_all_node.txt"))
+# write_table(nodeNetwork, os.path.join("./output/", "r4_alledge_node.txt"))
 
-
-selectPathway1 = ["map00941", "map00943", "map00944"]
-selectPathway2 = ["map00330", "map00940"]
-selectPathway3 = ["map00945"]
+# 选择输出特定的代谢途径的反应网络，结合Cytoscape软件(https://cytoscape.org/)进行查看
+# selectPathway1 = ["map00941", "map00943", "map00944"]
+# selectPathway2 = ["map00330", "map00940"]
+# selectPathway3 = ["map00945"]
 # selectPathway(selectPathway1, "flavonoid")
 # selectPathway(selectPathway2, "Arginine")
-selectPathway(selectPathway3, "Stilbenoid_diarylheptanoid_gingerol")
+# selectPathway(selectPathway3, "Stilbenoid_diarylheptanoid_gingerol")
